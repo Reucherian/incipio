@@ -6,4 +6,4 @@ install_brew:
 install: install_brew
 	./install.sh
 configure:
-	./configure.sh
+	./config.sh

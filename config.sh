@@ -4,9 +4,8 @@
 # terminal (iterm2) colors, fonts using dynamic profiles
 # vscode config file json - has builtin sync (turn it on)
 # dotfiles
-git clone https://github.com/Reucherian/.dotfiles.git $HOME/.dotfiles
-cd $HOME/.dotfiles
-stow zsh
-stow starship
+if [ -d $HOME/.dotfiles ] then; git clone https://github.com/Reucherian/.dotfiles.git $HOME/.dotfiles; fi;
+cd $HOME/.dotfiles;
+./config.sh
 # folder icons for specific folders
 #
