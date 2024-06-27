@@ -1,2 +1,3 @@
-# incipio-mac
-scripts to set up my macos system
+# incipio
+
+scripts to set up and configure systems
