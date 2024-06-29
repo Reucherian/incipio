@@ -1,23 +1,36 @@
 #!/bin/zsh
 # this shell script will install essential apps and scripts using homebrew.
 check_install() {
-    if [ $3 = "cli" ]; then
+    case $3 in 
+    "cli")
         if [ -x "$(command -v $1)" ]; then
             echo "The command $1 is already installed."
         else
             $2
         fi
-    elif [ $3 = "app" ]; then
+        ;;
+    "app")
         if [ -d "/Applications/$1.app" ]; then
             echo "The application $1 is already installed."
         else
             $2
         fi
-    fi
+        ;;
+    "brew")
+        if [ -L "/opt/homebrew/opt/$1" ]; then
+            echo "The package $1 is already installed and linked."
+        else
+            $2
+        fi
+        ;;
+    esac
 }
 
 main() {
-    # install command line tools
+    # does not require command line tools installation since git will need command line tools
+    check_install "tmux" "brew install tmux" "cli" # terminal multiplexer
+    check_install "tpm" "brew install tpm" "brew" # terminal multiplexer package manager
+    check_install "fzf" "brew install fzf" "cli" # fuzzy finder command line utility
     # installing applications
     check_install "Arc" "brew install --cask arc" "app"  # browser
     check_install "Visual Studio Code" "brew install --cask visual-studio-code" "app" # graphical code editor
