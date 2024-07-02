@@ -31,6 +31,7 @@ main() {
     check_install "tmux" "brew install tmux" "cli" # terminal multiplexer
     check_install "tpm" "brew install tpm" "brew" # terminal multiplexer package manager
     check_install "fzf" "brew install fzf" "cli" # fuzzy finder command line utility
+    check_install "nvim" "brew install neovim" "cli" # terminal code editor
     # installing applications
     check_install "Arc" "brew install --cask arc" "app"  # browser
     check_install "Visual Studio Code" "brew install --cask visual-studio-code" "app" # graphical code editor
