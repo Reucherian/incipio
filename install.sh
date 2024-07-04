@@ -51,6 +51,7 @@ main() {
     check_install "fzf"  fzf "cli" # fuzzy finder command line utility
     check_install "nvim" neovim "cli" # terminal code editor
     check_install "stow" stow "cli" # link manager for dotfiles
+    check_install "starship" starship "cli" # terminal prompt
     # installing applications
     check_install "Arc" arc "app"  # browser
     check_install "Visual Studio Code" visual-studio-code "app" # graphical code editor
