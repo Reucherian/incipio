@@ -433,7 +433,7 @@
     "Alpha Component" : 1,
     "Green Component" : 0.62745098039215685
   },
-  "Normal Font" : "MonaspiceNeNF-Medium 14 {\"featureSettings\":[{\"CTFeatureSelectorIdentifier\":14,\"CTFeatureTypeIdentifier\":35},{\"CTFeatureSelectorIdentifier\":10,\"CTFeatureTypeIdentifier\":35},{\"CTFeatureSelectorIdentifier\":12,\"CTFeatureTypeIdentifier\":35},{\"CTFeatureSelectorIdentifier\":16,\"CTFeatureTypeIdentifier\":35},{\"CTFeatureSelectorIdentifier\":2,\"CTFeatureTypeIdentifier\":35},{\"CTFeatureSelectorIdentifier\":6,\"CTFeatureTypeIdentifier\":35},{\"CTFeatureSelectorIdentifier\":4,\"CTFeatureTypeIdentifier\":35},{\"CTFeatureSelectorIdentifier\":8,\"CTFeatureTypeIdentifier\":35}]}",
+  "Normal Font" : "MonaspiceNeNF-Medium 14 {\"featureSettings\":[{\"CTFeatureSelectorIdentifier\":2,\"CTFeatureTypeIdentifier\":35},{\"CTFeatureSelectorIdentifier\":12,\"CTFeatureTypeIdentifier\":35},{\"CTFeatureSelectorIdentifier\":16,\"CTFeatureTypeIdentifier\":35},{\"CTFeatureSelectorIdentifier\":4,\"CTFeatureTypeIdentifier\":35},{\"CTFeatureSelectorIdentifier\":6,\"CTFeatureTypeIdentifier\":35},{\"CTFeatureSelectorIdentifier\":10,\"CTFeatureTypeIdentifier\":35},{\"CTFeatureSelectorIdentifier\":14,\"CTFeatureTypeIdentifier\":35},{\"CTFeatureSelectorIdentifier\":8,\"CTFeatureTypeIdentifier\":35}]}",
   "Use Selected Text Color (Dark)" : true,
   "Foreground Color" : {
     "Red Component" : 0.80392156862745101,
@@ -658,6 +658,13 @@
     "0x34-0x40000" : {
       "Action" : 11,
       "Text" : "0x1c"
+    },
+    "0x6b-0x100000-0x28" : {
+      "Version" : 2,
+      "Apply Mode" : 0,
+      "Action" : 11,
+      "Text" : "0x0c",
+      "Escaping" : 2
     },
     "0xf700-0x280000" : {
       "Action" : 11,
