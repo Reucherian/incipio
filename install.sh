@@ -23,22 +23,20 @@ check_install() {
 	   $pkg_mngr $pkg_mngr_cmd $2 
         fi
         ;;
+    "font")
+        if [ -d "${pkg_mngr_font_path}${1}" ]; then
+	    echo "The font $1 is already installed."
+	else
+	   $pkg_mgr $pkg_mngr_cmd $2
+	fi
+	;;
     esac
-}
-
-pkg_mngr_convert(){
-    local -n result=$1
-    if [ $pkg_mngr = "brew" ]; then
-	result=(install $2)
-    else
-	echo "This package manager is not supported"
-	exit
-    fi
 }
 
 brew_init(){
     pkg_mngr=brew
     pkg_mngr_path="/opt/homebrew/opt/"
+    pkg_mngr_font_path="/opt/homebrew/Caskroom/"
     pkg_mngr_cmd=install
     pkg_mngr_cmd_cask=--cask
 }
@@ -52,6 +50,10 @@ main() {
     check_install "nvim" neovim "cli" # terminal code editor
     check_install "stow" stow "cli" # link manager for dotfiles
     check_install "starship" starship "cli" # terminal prompt
+    check_install "cmatrix" cmatrix "cli" # fun uility
+    check_install "neofetch" neofetch  "cli" # spec display utility
+    check_install "htop" htop "cli" # resource dashboard utility
+    check_install "mas" mas "cli" # 
     # installing applications
     check_install "Arc" arc "app"  # browser
     check_install "Visual Studio Code" visual-studio-code "app" # graphical code editor
@@ -61,7 +63,7 @@ main() {
     check_install "IINA" iina "app" # media player
     check_install "iTerm" iterm2 "app" # terminal app
     check_install "logioptionsplus" logi-options-plus "app" # peripherals app
-    # check_install "" "" "font
+    check_install "font-monaspace-nerd-font" font-monaspace-nerd-font "font" 
 }
 
 main
