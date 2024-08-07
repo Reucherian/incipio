@@ -61,7 +61,7 @@ main() {
     check_install "Swish" swish "app" # window manager
     check_install "Bartender 5" bartender "app" # menu bar manager
     check_install "IINA" iina "app" # media player
-    check_install "iTerm" iterm2 "app" # terminal app
+    check_install "WezTerm" wezterm "app" # terminal app
     check_install "logioptionsplus" logi-options-plus "app" # peripherals app
     check_install "font-monaspace-nerd-font" font-monaspace-nerd-font "font" 
 }
